@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Import Assets -->
+      <a-assets>
+        <a-asset-item id="extend-trunk-bit" src="assets/trunk bit.glb"></a-asset-item>
+        <a-asset-item id="door-trunk-bit" src="assets/door trunk bit.glb"></a-asset-item>
+        <a-asset-item id="door" src="./assets/door bit.glb"></a-asset-item>
+      </a-assets>
+      <!-- Create Models in Scene -->
+      <a-entity gltf-model="#extend-trunk-bit" position="0 0 0"></a-entity>
+      <a-entity gltf-model="#door-trunk-bit" position="0 0 0"></a-entity>
+      <a-entity gltf-model="./assets/door bit.glb" position="-0.2429 0.07277 0.27651" scale="1.42073 1.2 1.2"></a-entity>
+
+       <!-- Create Camera -->
+       
+
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
